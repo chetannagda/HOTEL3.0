@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maharaja Palace | Luxury Indian Hotel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-inner">
+      <h2>Maharaja Palace</h2>
+      <h3>Luxury Awaits</h3>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <h1>Maharaja Palace</h1>
+        </div>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#rooms" class="nav-link">Rooms</a></li>
+            <li><a href="#dining" class="nav-link">Dining</a></li>
+            <li><a href="#amenities" class="nav-link">Amenities</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-slider">
+      <div class="slide active">
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="slide-content">
+          <h2 class="reveal-text">Welcome to Maharaja Palace</h2>
+          <p class="reveal-text">Experience royal luxury in the heart of India</p>
+          <a href="#rooms" class="btn btn-primary reveal-text">Explore Rooms</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+        <div class="slide-content">
+          <h2 class="reveal-text">Exquisite Dining</h2>
+          <p class="reveal-text">Savor authentic Indian cuisine prepared by master chefs</p>
+          <a href="#dining" class="btn btn-primary reveal-text">Discover More</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80')"></div>
+        <div class="slide-content">
+          <h2 class="reveal-text">Unparalleled Luxury</h2>
+          <p class="reveal-text">Indulge in our world-class amenities and services</p>
+          <a href="#amenities" class="btn btn-primary reveal-text">Explore Amenities</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+      <div class="slide-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+      <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Our Story</span>
+        <h2 class="title reveal-text">About Maharaja Palace</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image reveal-image">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Maharaja Palace Exterior">
+          <div class="experience">
+            <h3>25+</h3>
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="reveal-text">Nestled in the heart of India, Maharaja Palace stands as a testament to royal heritage and luxury. Our hotel combines traditional Indian architecture with modern amenities to create an unforgettable experience for our guests.</p>
+          <p class="reveal-text">Since our establishment in 1998, we have been dedicated to providing exceptional service and creating memorable experiences for travelers from around the world.</p>
+          <div class="features reveal-text">
+            <div class="feature">
+              <i class="fas fa-crown"></i>
+              <h4>Royal Treatment</h4>
+              <p>Experience service fit for royalty</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-utensils"></i>
+              <h4>Exquisite Dining</h4>
+              <p>Authentic Indian cuisine</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-spa"></i>
+              <h4>Luxury Spa</h4>
+              <p>Traditional wellness treatments</p>
+            </div>
+          </div>
+          <a href="#rooms" class="btn btn-secondary reveal-text">Explore Our Rooms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Luxury Accommodations</span>
+        <h2 class="title reveal-text">Our Exquisite Rooms</h2>
+      </div>
+      <div class="rooms-grid">
+        <div class="room-card reveal-card">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deluxe Room">
+          </div>
+          <div class="room-details">
+            <h3>Deluxe Room</h3>
+            <p>Experience comfort and elegance in our spacious deluxe rooms featuring traditional Indian decor.</p>
+            <div class="room-features">
+              <span><i class="fas fa-bed"></i> King Bed</span>
+              <span><i class="fas fa-wifi"></i> Free WiFi</span>
+              <span><i class="fas fa-bath"></i> Luxury Bath</span>
+            </div>
+            <div class="room-price">
+              <span>From ₹15,000 / night</span>
+              <a href="#contact" class="btn btn-small">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card reveal-card">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Royal Suite">
+          </div>
+          <div class="room-details">
+            <h3>Royal Suite</h3>
+            <p>Indulge in luxury with our spacious royal suites featuring separate living areas and private balconies.</p>
+            <div class="room-features">
+              <span><i class="fas fa-bed"></i> King Bed</span>
+              <span><i class="fas fa-couch"></i> Living Area</span>
+              <span><i class="fas fa-swimming-pool"></i> Private Pool</span>
+            </div>
+            <div class="room-price">
+              <span>From ₹35,000 / night</span>
+              <a href="#contact" class="btn btn-small">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="room-card reveal-card">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Maharaja Suite">
+          </div>
+          <div class="room-details">
+            <h3>Maharaja Suite</h3>
+            <p>Our most luxurious accommodation, fit for royalty with personalized butler service and panoramic views.</p>
+            <div class="room-features">
+              <span><i class="fas fa-bed"></i> Emperor Bed</span>
+              <span><i class="fas fa-concierge-bell"></i> Butler Service</span>
+              <span><i class="fas fa-hot-tub"></i> Jacuzzi</span>
+            </div>
+            <div class="room-price">
+              <span>From ₹75,000 / night</span>
+              <a href="#contact" class="btn btn-small">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dining Section -->
+  <section id="dining" class="dining section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Culinary Excellence</span>
+        <h2 class="title reveal-text">Exquisite Dining Experience</h2>
+      </div>
+      <div class="dining-content">
+        <div class="dining-text">
+          <p class="reveal-text">At Maharaja Palace, we offer a culinary journey through the diverse flavors of India. Our restaurants serve authentic dishes prepared by master chefs using traditional techniques and the finest ingredients.</p>
+          <div class="restaurants reveal-text">
+            <div class="restaurant">
+              <h3>Spice Garden</h3>
+              <p>Experience the rich flavors of North Indian cuisine in an elegant setting.</p>
+              <span>Open: 12:00 PM - 11:00 PM</span>
+            </div>
+            <div class="restaurant">
+              <h3>Coastal Treasures</h3>
+              <p>Savor the delicate flavors of South Indian and coastal delicacies.</p>
+              <span>Open: 7:00 AM - 10:30 PM</span>
+            </div>
+            <div class="restaurant">
+              <h3>Royal Lounge</h3>
+              <p>Enjoy fine wines, spirits, and cocktails in a sophisticated atmosphere.</p>
+              <span>Open: 4:00 PM - 1:00 AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="dining-images">
+          <div class="dining-image reveal-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fine Dining">
+          </div>
+          <div class="dining-image reveal-image">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Indian Cuisine">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="amenities section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Luxury Facilities</span>
+        <h2 class="title reveal-text">Hotel Amenities</h2>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-swimming-pool"></i>
+          </div>
+          <h3>Infinity Pool</h3>
+          <p>Enjoy our stunning infinity pool with panoramic views of the city skyline.</p>
+        </div>
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3>Luxury Spa</h3>
+          <p>Indulge in traditional Indian wellness treatments and modern spa therapies.</p>
+        </div>
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h3>Fitness Center</h3>
+          <p>Stay fit with state-of-the-art equipment and personal training sessions.</p>
+        </div>
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Fine Dining</h3>
+          <p>Experience culinary excellence at our award-winning restaurants.</p>
+        </div>
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-concierge-bell"></i>
+          </div>
+          <h3>Concierge Service</h3>
+          <p>Our dedicated concierge team is available 24/7 to assist with all your needs.</p>
+        </div>
+        <div class="amenity-card reveal-card">
+          <div class="amenity-icon">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3>High-Speed WiFi</h3>
+          <p>Stay connected with complimentary high-speed internet throughout the hotel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Visual Journey</span>
+        <h2 class="title reveal-text">Hotel Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hotel Exterior">
+          <div class="gallery-overlay">
+            <span>Hotel Exterior</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Room">
+          <div class="gallery-overlay">
+            <span>Luxury Room</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Swimming Pool">
+          <div class="gallery-overlay">
+            <span>Swimming Pool</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant">
+          <div class="gallery-overlay">
+            <span>Restaurant</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Spa">
+          <div class="gallery-overlay">
+            <span>Luxury Spa</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal-image">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="Lobby">
+          <div class="gallery-overlay">
+            <span>Grand Lobby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Guest Experiences</span>
+        <h2 class="title reveal-text">What Our Guests Say</h2>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <div class="quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"An unforgettable experience! The service was impeccable, and the royal suite exceeded all our expectations. The traditional Indian decor combined with modern amenities created a perfect blend of luxury and comfort."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>London, UK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"The culinary experience at Maharaja Palace is unmatched. Each meal was a journey through the diverse flavors of India. The staff's attention to detail and warm hospitality made our stay truly memorable."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Chen">
+              <div>
+                <h4>David Chen</h4>
+                <span>Singapore</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p>"From the moment we arrived, we were treated like royalty. The spa treatments were rejuvenating, and the infinity pool offered breathtaking views. Maharaja Palace truly lives up to its name and reputation."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Emma Rodriguez">
+              <div>
+                <h4>Emma Rodriguez</h4>
+                <span>Madrid, Spain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle reveal-text">Get In Touch</span>
+        <h2 class="title reveal-text">Contact Us</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item reveal-text">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>123 Palace Road, Jaipur, Rajasthan, India</p>
+            </div>
+          </div>
+          <div class="contact-item reveal-text">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+91 123 456 7890</p>
+            </div>
+          </div>
+          <div class="contact-item reveal-text">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>info@maharajapalace.com</p>
+            </div>
+          </div>
+          <div class="social-links reveal-text">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="contact-form reveal-card">
+          <form id="bookingForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" placeholder="Your Phone" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="check-in">Check In</label>
+                <input type="date" id="check-in" required>
+              </div>
+              <div class="form-group">
+                <label for="check-out">Check Out</label>
+                <input type="date" id="check-out" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="room-type" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="royal">Royal Suite</option>
+                <option value="maharaja">Maharaja Suite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Special Requests" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Maharaja Palace</h2>
+          <p>Experience royal luxury in the heart of India</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#dining">Dining</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#amenities">Amenities</a></li>
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Events & Weddings</a></li>
+              <li><a href="#">Business Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Maharaja Palace. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
