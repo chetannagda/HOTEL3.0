@@ -175,24 +175,71 @@ function revealElements() {
   const windowHeight = window.innerHeight;
   const revealPoint = 150;
   
+  // Track last scroll position to determine direction
+  const currentScrollY = window.scrollY;
+  
+  if (!revealElements.lastScrollY) {
+    revealElements.lastScrollY = currentScrollY;
+  }
+  
+  // Determine scroll direction
+  const isScrollingDown = currentScrollY > revealElements.lastScrollY;
+  revealElements.lastScrollY = currentScrollY;
+  
   revealTexts.forEach(element => {
     const revealTop = element.getBoundingClientRect().top;
-    if (revealTop < windowHeight - revealPoint) {
+    const isVisible = revealTop < windowHeight - revealPoint;
+    
+    if (isVisible) {
       element.classList.add('active');
+      element.classList.remove('inactive');
+    } else if (element.classList.contains('active')) {
+      // Only apply reverse animation if element was previously active
+      element.classList.remove('active');
+      element.classList.add('inactive');
     }
   });
   
   revealImages.forEach(element => {
     const revealTop = element.getBoundingClientRect().top;
-    if (revealTop < windowHeight - revealPoint) {
+    const isVisible = revealTop < windowHeight - revealPoint;
+    
+    if (isVisible) {
       element.classList.add('active');
+      element.classList.remove('inactive');
+    } else if (element.classList.contains('active')) {
+      element.classList.remove('active');
+      element.classList.add('inactive');
     }
   });
   
   revealCards.forEach(element => {
     const revealTop = element.getBoundingClientRect().top;
-    if (revealTop < windowHeight - revealPoint) {
+    const isVisible = revealTop < windowHeight - revealPoint;
+    
+    if (isVisible) {
       element.classList.add('active');
+      element.classList.remove('inactive');
+    } else if (element.classList.contains('active')) {
+      element.classList.remove('active');
+      element.classList.add('inactive');
+    }
+  });
+}
+
+// Parallax effect for sections
+function parallaxEffect() {
+  const parallaxElements = document.querySelectorAll('.section-header, .about-image, .dining-images');
+  
+  parallaxElements.forEach(element => {
+    const scrollPosition = window.scrollY;
+    const elementPosition = element.offsetTop;
+    const distance = scrollPosition - elementPosition;
+    
+    if (distance < windowHeight && distance > -windowHeight) {
+      const speed = 0.1;
+      const yPos = distance * speed;
+      element.style.transform = `translateY(${yPos}px)`;
     }
   });
 }
@@ -237,7 +284,10 @@ function setActiveNavLink() {
   });
 }
 
-window.addEventListener('scroll', setActiveNavLink);
+window.addEventListener('scroll', () => {
+  setActiveNavLink();
+  parallaxEffect();
+});
 
 // Form Submission
 const bookingForm = document.getElementById('bookingForm');
@@ -267,13 +317,41 @@ if (bookingForm) {
       message
     });
     
-    // Reset form
-    bookingForm.reset();
+    // Show success message with animation
+    const formContainer = document.querySelector('.contact-form');
+    formContainer.innerHTML = `
+      <div class="success-message">
+        <i class="fas fa-check-circle"></i>
+        <h3>Booking Request Sent!</h3>
+        <p>Thank you for your booking request, ${name}. We will contact you shortly to confirm your reservation.</p>
+      </div>
+    `;
     
-    // Show success message (you could create a more sophisticated notification)
-    alert('Thank you for your booking request! We will contact you shortly to confirm your reservation.');
+    // Add animation class
+    setTimeout(() => {
+      document.querySelector('.success-message').classList.add('active');
+    }, 100);
   });
 }
+
+// Add hover effects for interactive elements
+const interactiveElements = document.querySelectorAll('.btn, .room-card, .amenity-card, .gallery-item, .social-link');
+
+interactiveElements.forEach(element => {
+  element.addEventListener('mouseenter', () => {
+    cursor.style.width = '15px';
+    cursor.style.height = '15px';
+    cursorFollower.style.width = '50px';
+    cursorFollower.style.height = '50px';
+  });
+  
+  element.addEventListener('mouseleave', () => {
+    cursor.style.width = '10px';
+    cursor.style.height = '10px';
+    cursorFollower.style.width = '40px';
+    cursorFollower.style.height = '40px';
+  });
+});
 
 // Initialize everything when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -285,4 +363,12 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     revealElements();
   }, 1000);
+  
+  // Add window height variable for parallax
+  window.windowHeight = window.innerHeight;
+  
+  // Add resize event listener
+  window.addEventListener('resize', () => {
+    window.windowHeight = window.innerHeight;
+  });
 });
